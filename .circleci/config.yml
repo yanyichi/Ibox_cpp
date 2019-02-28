@@ -39,3 +39,11 @@ jobs:
 
       # run tests!
       - run: mvn clean package
+	  
+      - run: mvn integration-test
+      - run: mvn test
+
+      - run: mvn verify
+      - run: mvn cobertura:cobertura
+      - run: mvn checkstyle:checkstyle
+      - run: mvn findbugs:findbugs
