@@ -39,5 +39,3 @@ jobs:
 
       # run tests!
       - run: mvn clean package
-	  
-	  
