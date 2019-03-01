@@ -18,12 +18,17 @@ aws_secret_access_key = your_secret_access_key
 
 Open Ibox_cpp with any Java IDE: Intellij, Eclips, NetBeans etc.
 Run IboxApplication (Ibox_cpp\src\main\java\Ibox\Ibox\IboxApplication)
+
 Do created deleted or updated files in folder demoDrive (Ibox_cpp\src\main\resources\demoDrive\)
+
 It will sync up all the changes from demoDrive folder to Amazon S3 bucket: ibox-bucket (will created if not exist)
 ![avatar](https://github.com/yanyichi/Ibox_cpp/blob/master/pic/ibox_bucket.png)
 
 ## Running the tests
-
+```
+mvn clean package
+```
+OR
 Open Ibox_cpp with any Java IDE: Intellij, Eclips, NetBeans etc.
 Run IboxApplicationTests (Ibox_cpp\src\test\java\Ibox\Ibox\IboxApplicationTests)
 
