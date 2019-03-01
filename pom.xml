@@ -74,15 +74,9 @@
 				<version>2.19.1</version>
 				<configuration>
 					<testFailureIgnore>true</testFailureIgnore>
-					<includes>
-						<include>**/*IntegrationTest.java</include>
-						<include>**/*JourneyTest.java</include>
-						<include>**/*CucumberFeatureTest.java</include>
-					</includes>
 				</configuration>
 			</plugin>
 		</plugins>
-
 	</build>
 
 </project>
