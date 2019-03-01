@@ -18,6 +18,14 @@
 	<properties>
 		<java.version>1.8</java.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<junit-jupiter.version>5.3.0-M1</junit-jupiter.version>
+		<rest-assured.version>3.0.3</rest-assured.version>
+		<maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
+
+		<java.version>1.8</java.version>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+
 	</properties>
 
 	<dependencies>
@@ -26,16 +34,8 @@
 			<artifactId>aws-java-sdk</artifactId>
 			<version>1.9.6</version>
 		</dependency>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-		<groupId>org.junit.jupiter</groupId>
-		<artifactId>junit-jupiter-api</artifactId>
-		<version>5.1.0-M1</version>
-		</dependency>
+
+
 		<dependency>
 			<groupId>io.findify</groupId>
 			<artifactId>s3mock_2.12</artifactId>
@@ -59,6 +59,19 @@
 			<artifactId>directory-watcher</artifactId>
 			<version>0.8.0</version>
 		</dependency>
+
+		<dependency>
+			<groupId>org.junit.jupiter</groupId>
+			<artifactId>junit-jupiter-engine</artifactId>
+			<version>${junit-jupiter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>${rest-assured.version}</version>
+			<scope>test</scope>
+		</dependency>
 	</dependencies>
 
 	<build>
@@ -67,14 +80,12 @@
 				<directory>>src/main/resources</directory>
 			</resource>
 		</resources>
+
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-surefire-plugin</artifactId>
-				<version>2.19.1</version>
-				<configuration>
-					<testFailureIgnore>true</testFailureIgnore>
-				</configuration>
+				<version>${maven-surefire-plugin.version}</version>
 			</plugin>
 		</plugins>
 	</build>

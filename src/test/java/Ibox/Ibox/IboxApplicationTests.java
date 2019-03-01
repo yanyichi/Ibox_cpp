@@ -2,24 +2,17 @@ package Ibox.Ibox;
 
 import com.amazonaws.AmazonServiceException;
 import com.amazonaws.auth.AnonymousAWSCredentials;
-import com.amazonaws.regions.Region;
-import com.amazonaws.regions.Regions;
 import com.amazonaws.services.s3.AmazonS3;
 import com.amazonaws.services.s3.AmazonS3Client;
-import com.amazonaws.services.s3.model.S3Object;
 import io.findify.s3mock.S3Mock;
-import org.junit.After;
 import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Paths;
 import java.util.HashMap;
-import java.util.concurrent.Executors;
-import java.util.concurrent.ScheduledExecutorService;
 
 import static java.lang.Thread.sleep;
-import static java.util.concurrent.TimeUnit.SECONDS;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -48,13 +41,13 @@ public class IboxApplicationTests {
 //
 //	}
 //
-	@After
-	public void tearDown() throws Exception {
-		try  {
-			s3Mock.stop();
-		}catch (Exception e){
-		}
-	}
+//	@After
+//	public void tearDown() throws Exception {
+//		try  {
+//			s3Mock.stop();
+//		}catch (Exception e){
+//		}
+//	}
 
 	@Test
 	public void testDirectoryWatchingUtilityMock() throws IOException, InterruptedException {
