@@ -36,7 +36,7 @@ Run IboxApplicationTests (Ibox_cpp\src\test\java\Ibox\Ibox\IboxApplicationTests)
 ![avatar](https://github.com/yanyichi/Ibox_cpp/blob/master/pic/Code%20Covered.jpg)
 
 ## CircleCI
-[Ibox_cpp CircleCI Link](https://circleci.com/gh/yanyichi/Ibox_cpp/23)
+[Ibox_cpp CircleCI Link](https://circleci.com/gh/yanyichi/Ibox_cpp/32)
 ![avatar](https://github.com/yanyichi/Ibox_cpp/blob/master/pic/CircleCI.jpg)
 
 ## Authors
